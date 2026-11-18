@@ -33,10 +33,17 @@ Estimated kilograms of CO₂e equal price in rupees multiplied by an illustrativ
 
 In [Streamlit Community Cloud](https://share.streamlit.io), choose this repository, branch `main`, and entry point `app.py`. Select Python 3.12 in advanced settings. The app requires zero secrets.
 
-Live app link and screenshots are pending deployment verification.
+**Live app** [Open ShopImpact](https://shopimpact-idai102.streamlit.app/)
+
+## Screenshots
+
+[Live purchase preview](docs/screenshots/purchase-preview.png)
+
+![Monthly dashboard and Eco Saver badge](docs/screenshots/monthly-dashboard.png)
 
 ## Sources
 
 - [GHG Protocol Scope 3 calculation guidance](https://ghgprotocol.org/scope-3-calculation-guidance-2)
 - [Python Turtle](https://docs.python.org/3/library/turtle.html)
 - [Streamlit Community Cloud deployment](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app/deploy)
+

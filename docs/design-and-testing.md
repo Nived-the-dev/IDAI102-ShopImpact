@@ -9,7 +9,7 @@ A student comparing two purchases needs an immediate estimate and an affordable 
 | Area | Main elements | Intended action |
 | --- | --- | --- |
 | Top | Category selector, price, brand, date | Compare the live estimate, then add a row |
-| Main | Month selector, spend, CO2e, count, chart, ledger | Review the selected month |
+| Main | Month selector, spend, CO₂e, count, chart, ledger | Review the selected month |
 | Side | Alternative, badge, Turtle leaf, tip | Explore a lower-impact option |
 | Bottom | Method and badge rules | Understand the numbers and their limits |
 
@@ -21,13 +21,14 @@ All five model tests passed locally on Python 3.12. A 12-purchase synthetic data
 
 | Manual scenario | Expected | Observed |
 | --- | --- | --- |
-| Preview a valid price | Estimate updates before Add | |
-| Add two second-hand items | Eco Saver text and leaf appear | |
-| Enter an invalid price | Error with no new ledger row | |
-| Select another month | Only records in that month count | |
-| Open in a fresh browser session | App loads with an empty ledger | |
+| Preview a valid price | Estimate updates before Add | Passed. INR 500 second-hand clothing previewed 2.00 kg CO2e. |
+| Add two second-hand items | Eco Saver text and leaf appear | Passed. Second-hand clothing and refurbished electronics totaled INR 1,500 and 9.00 kg CO2e. The badge and leaf appeared. |
+| Enter an invalid price | Error with no new ledger row | Passed. A price of -1 showed an error and left both rows and totals intact. |
+| Select another month | Only records in that month count | Covered by the automated month and year test. |
+| Open in a fresh browser session | App loads with an empty ledger | Passed in a separate browser session without a sign-in prompt. |
 | First-time shopper adds an item | Can find Add and explain the estimate | |
 
 First-time shopper feedback is pending. Ask a shopper to log a purchase and explain the estimate. Record the observed difficulty, any change and the result of a retest.
+
 
 
