@@ -22,12 +22,12 @@ def purchase(category: str, price: str, brand: str, day: date) -> dict:
     except InvalidOperation as exc:
         raise ValueError("Enter a valid price in rupees.") from exc
     if not amount.is_finite() or not 0 < amount <= 1_000_000:
-        raise ValueError("Enter a price above ?0 and up to ?10,00,000.")
+        raise ValueError("Enter a price above ₹0 and up to ₹10,00,000.")
     if not brand.strip() or len(brand.strip()) > 50:
         raise ValueError("Enter a brand or use Unbranded (maximum 50 characters).")
     amount = amount.quantize(Decimal("0.01"))
     if amount == 0:
-        raise ValueError("Enter at least ?0.01.")
+        raise ValueError("Enter at least ₹0.01.")
     factor = Decimal(CATEGORIES[category][0])
     return {"category": category, "price": amount, "brand": brand.strip(),
             "date": day, "impact": amount * factor}

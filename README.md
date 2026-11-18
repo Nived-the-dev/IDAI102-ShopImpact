@@ -2,7 +2,7 @@
 
 ShopImpact is a Streamlit dashboard for Scenario 1 of the Year 1 Python Programming SA. It estimates the impact of planned purchases, groups them by month, and suggests options such as repair, borrowing and second-hand shopping.
 
-The dashboard shows a live estimate before adding a purchase. Its monthly view displays spend, estimated CO2e, a category chart, the purchase log and badges. The Turtle badge drawing uses the same coordinates in the desktop preview and the hosted SVG.
+The dashboard shows a live estimate before adding a purchase. Its monthly view displays spend, estimated CO₂e, a category chart, the purchase log and badges. The Turtle badge drawing uses the same coordinates in the desktop preview and the hosted SVG.
 
 ## Run and test
 
@@ -27,7 +27,7 @@ Tk is needed for the optional Turtle preview. The deployed dashboard renders the
 
 ## Method and limitations
 
-Estimated kilograms of CO2e equal price in rupees multiplied by an illustrative category factor. Factors are teaching assumptions. Price can vary for identical products, brand tags leave the factor unchanged, and the resulting estimates have no product certification. Session entries clear when the browser session resets.
+Estimated kilograms of CO₂e equal price in rupees multiplied by an illustrative category factor. Factors are teaching assumptions. Price can vary for identical products, brand tags leave the factor unchanged, and the resulting estimates have no product certification. Session entries clear when the browser session resets.
 
 ## Deployment
 
