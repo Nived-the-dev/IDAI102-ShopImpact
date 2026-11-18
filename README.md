@@ -1,0 +1,1 @@
+# IDAI102-ShopImpact
